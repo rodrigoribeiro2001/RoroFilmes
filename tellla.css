@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppons', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0e1538;
+}
+.box{
+    
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 20px;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(#00ccff,#d400d4);
+    animation: animate 4s linear infinite;
+    
+}
+.box::after
+{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #0e1538;
+    border-radius: 16px;
+}
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(350deg);
+    }
+}
+.box h2{
+    position: relative;
+    color: #fff;
+    font-size: 10em;
+    z-index: 10;
+}
+
+/* ---------------------------------- */
+/* body{
+    background-color: #1b1f27;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background-image: url(imagem/cinema-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.area-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #18192000;
+    width: 300px;
+    height: 320px;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.login form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+.login input{
+    margin-top: 10px;
+    background-color: #252a34;
+    color: #cbd0f7;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+.login img{
+    width: 65px;
+    height: auto;
+
+}
+.input::placeholder{
+    color: #cbd0f7;
+    font-size: 14px;    
+}
+form [type="submit"]{
+    display: block;
+    background-color:#5568fe ;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+p{
+    color: #cbd0f7;
+}
+a{
+    color: #5568fe;
+    text-decoration: none;
+    margin-left: 10px;
+}

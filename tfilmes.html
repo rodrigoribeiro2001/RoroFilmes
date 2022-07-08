@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="timerTfilmes.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body onload="pagina1(); relogi()">
+
+    <header>
+        <div class="container-logo">
+           
+            <div class="logo-imagem"></div>
+            <div class="logo-te">
+                <a href="tfilmes.html">
+                    <h1>RoroFilmes</h1>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="falecon.html">Contato</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li>
+                    <a class="bem"  href="#">Bem vindo </a>
+                    <a class="bem" id="demo" href="#"></a>
+                </li>
+                <li><div id="timer"></div></li>
+                
+            </ul>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+
+    
+
+        <div class="row justify-content-center mt-5">
+            <div class="col justify-content-center">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide"><img src="1.jpg" alt="" style="width: 100%; height:100%;"></li>
+                            <li class="glide__slide"><img src="2.jpg" alt="" style="width: 100%; height:100%;"></li>
+                            <li class="glide__slide"><img src="3.jpg" alt="" style="width: 100%; height:100%;"></li>
+                            <li class="glide__slide"><img src="4.jpg" alt="" style="width: 100%; height:100%;"></li>
+                            <li class="glide__slide"><img src="5.jpg" alt="" style="width: 100%; height:100%;"></li>
+                            <li class="glide__slide"><img src="6.jpg" alt="" style="width: 100%; height:100%;"></li>
+                            <li class="glide__slide"><img src="7.jpg" alt="" style="width: 100%; height:100%;"></li>
+                            <li class="glide__slide"><img src="8.jpg" alt="" style="width: 100%; height:100%;"></li>
+                            <li class="glide__slide"><img src="9.jpg" alt="" style="width: 100%; height:100%;"></li>
+                            <li class="glide__slide"><img src="10.jpg" alt="" style="width: 100%; height:100%;"></li>
+                            <li class="glide__slide"><img src="11.jpg" alt="" style="width: 100%; height:100%;"></li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                    </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide
+                   "></script>
+                <script>
+                    const config = {
+                        type: "carousel",
+                        perView: 4,
+                        breakpoints: {
+                            800: {
+                                perView: 2
+                            }
+                        },
+                        // autoplay: 2500
+                    };
+                    new Glide(".glide", config).mount();
+                </script>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" style="background-color:#0e1538;">
+                <p class="genero mt-3">
+                    Ação
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="agentes.html"><img src="agentes-acao.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="alerta.html"><img src="alerta-acao.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="carcereiros.html"><img src="carcereiros-acao.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="Infiltrado.html"><img src="infiltrado-acao.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="ivasao.html"><img src="invasao-acao.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="rambo.html"><img src="rambo-acao.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col " style="background-color:#0e1538;">
+                <p class="genero mt-3">
+                    Animação
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="asterix.html"><img src="Asterix-anim.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="big.html"><img src="big pai-anim.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="bugigangue.html"><img src="Bugigangue-anim.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="duda.html"><img src="duda-anim.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2 justify-content-center mb-3">
+                <a href="gulliver.html"><img src="gulliver-anim.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="robinson.html"><img src="Robinson-anim.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col "  style="background-color:#0e1538;">
+                <p class="genero mt-3">
+                    Terror
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-sm-12 col-md-4 col-lg-2 justify-content-center mb-3">
+                <a href="amaldiçoada.html"><img src="Amaldiçoada-terror.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="anuleto.html"><img src="Amuleto-terror.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="boneco.html"><img src="Boneco do Mal-terror.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2   justify-content-center mb-3">
+                <a href="exorcismo.html"><img src="Exorcismo-terror.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2  justify-content-center mb-3">
+                <a href="floresta.html"><img src="Floresta Maldita-terror.jpg" class="card-img-top img-fluid"
+                        alt=""></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2 justify-content-center mb-3">
+                <a href="maligno.html"><img src="Maligno-terror.jpg" class="card-img-top img-fluid" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

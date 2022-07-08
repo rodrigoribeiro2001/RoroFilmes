@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="row offset-3 mt-2">
+            <div class="card  " style="width:60%; background-color: #0e1538;">
+                <div class="col offset-3" style="color:white;">
+                    <h1>
+                        Fale Conosco
+                    </h1>
+                </div>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+
+                    <div class="form-group">
+                        <label for="cep"></label>
+                        <input type="text" placeholder="Cep: 00000-000" class="form-control" maxlength="9" id="cep">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="logradouro"></label>
+                        <input type="text" placeholder="Logradouro/Rua" class="form-control" id="logradouro">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro"></label>
+                        <input type="text" placeholder="Bairro" class="form-control" id="bairro">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="localidade"></label>
+                        <input type="text" placeholder="Cidade" class="form-control" id="localidade">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="uf"></label>
+                        <input type="text" placeholder="Estado/UF" class="form-control" id="uf">
+                        
+                    </div>
+
+
+
+
+
+                    <div class="col mt-3">
+                        <input type="text" name="name" placeholder="Seu nome" class="form-control">
+                    </div>
+                    <!-- <input type="text" name="name" placeholder="Seu nome"> -->
+                    <div class="col mt-3">
+                        <input type="text" name="email" placeholder="Email" class="form-control" />
+                    </div>
+                    <!-- <input type="text" name="email" placeholder="Email" /> -->
+                    <div class="col mt-3">
+                        <textarea name="message" placeholder="Assunto...." class="form-control"></textarea>
+                    </div>
+                    <!-- <textarea name="message" placeholder="Assunto...."></textarea> -->
+                    <input type="text" name="honeypot" style="display:none">
+                    <input type="hidden" name="accessKey" value="8cdb9602-ae90-4078-b457-d444c4dadcba">
+                    <input type="hidden" name="subject" value="Contact us from - example.com" />
+                    <input type="hidden" name="replyTo" value="@">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/tfilmes.html">
+                    <div class="col mt-2 offset-5">
+                        <input type="submit" value="Enviar" />
+                    </div>
+
+
+
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="cep1.js"></script>
+</html>

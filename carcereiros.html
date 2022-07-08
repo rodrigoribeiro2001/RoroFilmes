@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm col-md justify-content-center">
+                <a href="tfilmes.html">
+                    <h1>RoroFilmes</h1>
+                </a>
+                <!-- <button class="idade">16</button> -->
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-sm col-md caixa" id="card1" style="text-align:center;">
+                <img class="imgs" id="img1" src="carcereiros-acao.jpg" alt="" class="filme" style="width: 100; height: 100;">
+            </div>
+            <div class="col-sm col-md justify-content-center">
+                <h1>Carcereiros O Filme</h1>
+                <h6>Sinopse:</h6>
+                <p>
+                    Adriano (Rodrigo Lombardi) é um carcereiro íntegro e avesso à violência, ele tenta garantir a tranquilidade no presídio, mesmo sofrendo com grandes dilemas familiares. A chegada de Abdel (Kaysar Dadour), um perigoso terrorista internacional, aumenta ainda mais a tensão no presídio, que já vive dias de terror por conta da luta entre duas facções criminosas.
+                </p>
+                <h6>Elenco:</h6>
+                <p>
+                    Rodrigo LombardiTony TornadoMilton GoncalvesKaysar DadourJackson AntunesDan StulbachRomulo BragaIvan de AlmeidaGiovanna RispoliBianca MullerSimiliao AurelioGermano PereiraJose TrassiRainer CadeteRafael Portugal
+                </p>
+                <h6>Gênero:</h6>
+                <p>
+                    Ação
+                </p>
+                <h6>Idade:</h6>
+                <p>
+                    <button style="background-color: #d22720;">16</button>
+                </p>
+                <h6 id="preço">R$26,00</h6>
+                <input type="number" style="width:100px;" id="qt" class="mt-2 botao-number" placeholder="Adicionar">
+                <input type="button" value="Enviar para o carrinho" class="botao-adicionar" onclick="addCart9()">
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="zoom.js"></script>
+<script src="carrinho.js"></script>
+</html>
